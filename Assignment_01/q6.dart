@@ -3,6 +3,7 @@ import 'dart:io';
 void main() {
   print("Enter any Alphabet: ");
   String alphabet = stdin.readLineSync()!;
+  alphabet = alphabet.toLowerCase();
 
   if (alphabet[0] == "a" ||
       alphabet[0] == "e" ||
