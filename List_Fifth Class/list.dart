@@ -18,13 +18,18 @@ void main() {
 
   for (int i = 0; i < size; i++) {
     print("Enter Name: ");
-    String name1 = stdin.readLineSync()!;
-    name.add(name1);
+    String input = stdin.readLineSync()!;
+    name.add(input);
   }
 
   print(name);
   name.sort();
   print(name);
+
+  // updating last value of list
+  name.replaceRange(name.length-1, name.length, ["bilal"]);
+  print(name);
+
   //[Saleem, Ahmed, Saleem, Bilal, Ashir , Huzaifa]
   //print(name.indexOf("Saleem"));
   //print(name.lastIndexOf("Saleem"));
